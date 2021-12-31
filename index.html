@@ -1,76 +1,43 @@
 <!DOCTYPE html>
+<!-- NSI projet -->
 <html>
     <head>
-        <title>MaPageWeb</title>
         <meta charset="UTF-8">
+        <title>Civilisation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="monstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/ico" href="images/earth.gif" />
+        <script src="script.js"></script>
     </head>
     <body>
-        <div>
-            <h1 id="titre1">Creation de sites internet</h1>
-            <h1 class="titre23">Titre 1</h1>
-            <h1 class="titre23">Titre 2</h1>
-            <p class="paragraphe1">
-                Voici un premier paragraphe
-            </p>
-            <img id="img" src="images/logo_nsi.png" alt="image NSI"/>
-            <p>
-                <a href="https://www.touchard-washington.fr/">Lien vers le site du lycée</a>
-            </p>
-            <p> Liste des joueurs</p>
-            <table id="tableau" >
-                <tr>
+        <div id="pageetbarre">
+            <div id="barre">
+                <ul>
+                    <li><a  onmouseenter="beep()" href='#'>CIVILISATION</a></li>
+                    <li><a  onmouseenter="beep()" href='accueil.html' title="Page d'accueil">Accueil</a></li>
+                    <li><a  onmouseenter="beep()" href='romain.html' title="Les Romains">Les Romains</a></li>
+                    <li><a  onmouseenter="beep()" href='azteque.html' title="Page Aztèque">Aztèques</a></li>
+                    <li><a  onmouseenter="beep()" href='credit.html' title="Crédit">Crédit</a></li>
+                </ul>
+            </div>
+            <div class="page">
+                <div class="contenu">
 
-                    <th class="lignetableau">Nom</th>
-                    <th class="lignetableau">Prénom</th>
-                    <th class="lignetableau">Age</th>
-                </tr>
-                <tr>
-                    <td class="lignetableau">Jean</td>
-                    <td class="lignetableau">Dupont</td>
-                    <td class="lignetableau">37</td>
-                </tr>            
-                <tr>
-                    <td class="lignetableau">Jacque</td>
-                    <td class="lignetableau">Durand</td>
-                    <td class="lignetableau">45</td>
-                </tr>
-            </table>
+                    <h1>Les Civilisation Antique</h1>
+                </div>
+                <div class="contenu">
+                    <h2>Bienvenue</h2>
+                    <p>
+                        Ce site Internet est dédié aux civilisations antiques.</p>
+                    <p>Vous trouverez :</p>
+                    <ul class="liste">
+                        <li><a class='liens' href='accueil.html'>une présentation des civilizations</a></li>
+                        <li><a class='liens' href='romain.html'>une présentation de la civilisation romaine</a></li>
+                        <li><a class='liens' href='azteque.html'>une présentation de la civilisation Aztèque</a></li>
+                        <li><a class='liens' href='credit.html'>les crédits</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <ol>
-            <li>HTML
-                <ul>
-                    <li>Principes</li>
-                    <li>Mise en forme
-                        <ul>
-                            <li>Balise de texte</li>
-                            <li>Les tableaux</li>
-                            <li>Les listes</li>
-                        </ul>
-
-
-                    </li>
-                    <li>Les formulaires</li>
-                </ul>
-            </li>
-            <li>CSS
-                <ul>
-                    <li>CSS de base</li>
-                    <li>CSS avancé</li>
-                </ul>
-
-            </li>
-            <li>Languages de programmation
-
-                <ul>
-                    <li>Algorithmes</li>
-                    <li>Python</li>
-                </ul>
-            </li>
-
-
-        </ol>
-
     </body>
 </html>
