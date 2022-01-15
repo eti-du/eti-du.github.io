@@ -1,4 +1,4 @@
-const sound = new Audio('Beep_400ms.ogg');
+const sound = new Audio('https://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav');
 function beep() {
     sound.play();
 }
