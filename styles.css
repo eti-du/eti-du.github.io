@@ -51,7 +51,7 @@ p{
     height:100%;
     width: 100%;
     cursor: url('images/cursor.svg') 4 12, auto;
-    animation: 1s linear 0s 1 alternate pbdep;
+    /*animation: 1s linear 0s 1 alternate pbdep;*/
 }
 
 #barre {
