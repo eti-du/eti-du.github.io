@@ -1,4 +1,4 @@
-const sound = new Audio('https://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav');
+const sound = new Audio('Beepalert.wav');
 function beep() {
     sound.play();
 }
