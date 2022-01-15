@@ -1,0 +1,241 @@
+h1{
+    font-family: serif;
+    font-size: 64px;
+    margin: 20px;
+    text-align: center;
+    animation: 6s linear 0s 1 pageetbarredep;
+}
+
+h2{
+    font-family: serif;
+    font-size: 32px;
+    margin: 30px;
+    animation: 7s linear 1s 1 pageetbarredep;
+}
+
+p{
+    font-family: cursive;
+    font-size: 24px;
+    margin: 15px;
+    text-align: justify;
+    animation: 7s linear 1s 1 pageetbarredep;
+}
+
+.liens:link {
+    color:#00f3bd;
+}
+
+.liens:visited{
+    color: #40b38d;
+}
+
+.listecredit li a:link{
+    color:#00f3bd;
+}
+
+.listecredit li a:visited{
+    color: #40b38d;
+}
+
+::selection{
+    background-color: #00f3bd;
+    color: #cc0000;
+}
+
+#pageetbarre {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url('images/arbres.jpg');
+    background-size: cover;
+    height:100%;
+    width: 100%;
+    cursor: url('images/cursor.svg') 4 12, auto;
+    animation: 1s linear 0s 1 alternate pbdep;
+}
+
+#barre {
+    background-color:  #cc0000;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500%;
+    height: 50px;
+    border: 2px #00f3bd solid;
+    font-size: 0;
+}
+
+#barre ul{/*
+    position: relative;
+    left: 0px;
+    top: 0px;*/
+    height: 100%;
+}
+
+#barre ul li{
+    display: inline-block;
+    border-right: 2px #00f3bd solid;
+    height: 100%;
+    animation: 6s 0s 1 barredeplacement;
+    animation-timing-function: cubic-bezier(0.85,0.4,0.1,1);
+}
+
+#barre ul li:hover{
+    background-color: #dd0000;
+    border: 2px #f0f0f0 solid;
+}
+
+#barre ul li a{
+    position: relative;
+    top: 6px;
+    left: 0px;
+    color: #00f3bd;
+    font-family: Verdana;
+    font-size: 28px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#barre ul li a:hover{
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+#sommaire {
+    margin-left: 3%;
+    background-size: cover;
+    background-color:rgba(245,10,10,0.75);
+    border: 10px #00f3bd dotted;
+    border-radius: 25px;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    width: 10%;
+    height: auto;
+    position: relative;
+    top: 100px;
+    z-index: 100;
+    animation: 6s linear 10s 100 alternate somdeplacement;
+}
+
+#sommaire ol {
+    list-style-type: upper-roman;
+}
+
+#sommaire h3 {
+    font-size: 160%;
+    text-align: center;
+}
+
+#sommaire a{
+    color: #f0f0f0;
+}
+
+#sommaire a:hover{
+    color: #00f3bd;
+}
+
+#sommaire ol li:hover{
+    color: #00f3bd;
+}
+
+.page{
+    position: absolute;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scrollbar-color: #00f3bd #cc0000; /*fonctionne seulement avec firefox*/
+    animation: 3s linear 0s 1 pageetbarredep;
+}
+
+.contenu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    background-color:rgba(245,10,10,0.75);
+    background-size: cover;
+    border: 10px #00f3bd double;
+    border-radius: 50px;
+    color: #f0f0f0;
+    width: 65%;
+    height: auto;
+    position: relative;
+    top: 100px;
+}
+
+#tableau {
+    border: 5px #f0f0f0 groove;
+    border-collapse: collapse;
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
+    height: 1000px;
+    margin: 10px auto 50px auto;
+    animation: 7s linear 1s 1 alternate pageetbarredep;
+}
+
+.colonne{
+    border: 2px #f0f0f0 dotted;
+}
+
+.ligne{
+    height: 10%;
+}
+
+.liste {
+    font-size: 18px;
+    color: #f0f0f0;
+    animation: 7s linear 1s 1 alternate pageetbarredep;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*position: relative;*/
+    display: block;
+    width: 40%;
+    border: 3px solid #000000;
+    animation: 7s linear 1s 1 alternate pageetbarredep;
+
+}
+
+#imgsphere {
+    height: 250px;
+    width: 250px;
+    background-image: url('images/sphere.png');
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    animation: 10s linear 8s infinite rotate;
+}
+
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes pbdep{
+    from{transform: skew(90deg, 90deg);}
+    to{transform: skew(0deg, 0deg);}
+}
+
+@keyframes pageetbarredep{
+    from{transform: translateY(1000px);margin-top: 100px;}
+    to{transform: translateY(0px);margin-top: 0px;}
+}
+
+@keyframes barredeplacement {
+    from {margin-left: 1500px;}
+    to{ margin-left: 0px;}
+}
+
+@keyframes somdeplacement {
+    from{transform: translateY(0%);}
+    to{transform: translateY(100%);}    
+}
