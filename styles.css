@@ -264,7 +264,7 @@ p{
 }
 
 @keyframes barredeplacement {
-    from {margin-left: 1500px;}
+    from {margin-left: 1250px;}
     to{ margin-left: 0px;}
 }
 
