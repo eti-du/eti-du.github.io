@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Civilisation | Quiz </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/ico" href="images/earth.gif" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="pageetbarre">
+            <div id="barre">
+                <ul>
+                    <li><a onmouseenter="beep()" href='index.html'>CIVILISATION</a></li>
+                    <li><a onmouseenter="beep()" href='accueil.html'  title="Page d'accueil">Accueil</a></li>
+                    <li><a onmouseenter="beep()" href='romain.html' title="Les Romains">Les Romains</a></li>
+                    <li><a onmouseenter="beep()" href='azteque.html' title="Page Aztèque">Aztèques</a></li>
+                    <li><a onmouseenter="beep()" href='#'  title="Quiz">[Quiz]</a></li>
+                    <li><a onmouseenter="beep()" href='credit.html' title="Crédit">Crédit</a></li>
+                </ul>
+            </div>
+            <div class="page">
+                <div class="contenu">
+                    <h1>Quiz</h1>
+                    <p>Un petit quiz pour savoir si vous avez bien compris.</p>
+
+                    <div class="quiz">
+                        <h2>À quelle période les premiers peuples se sont formé ?</h2>
+                        <p>
+                            <input type="radio" id="ques1prop1" name="ques1" value="prop1">
+                            <label for="ques1prop1">Pendant la Préhistoire</label><br>
+                            <input type="radio" id="ques1prop2" name="ques1" value="prop2">
+                            <label for="ques1prop2">Pendant l'Antiquité</label><br>
+                            <input type="radio" id="ques1prop3" name="ques1" value="prop3">
+                            <label for="ques1prop3">Pendant le Moyen Âge</label><br>
+                        </p>
+                    </div>
+                    <div class="quiz">
+                        <h2>Oú vivaient les Aztèques ?</h2>
+                        <p>
+                            <input type="radio" id="ques2prop1" name="ques2" value="prop1">
+                            <label for="ques2prop1">En Amérique</label><br>
+                            <input type="radio" id="ques2prop2" name="ques2" value="prop2">
+                            <label for="ques2prop2">En Afrique</label><br>
+                            <input type="radio" id="ques2prop3" name="ques2" value="prop3">
+                            <label for="ques2prop3">En Asie</label><br>
+                            <input type="radio" id="ques2prop4" name="ques2" value="prop4">
+                            <label for="ques2prop4">En Europe</label><br>
+                        </p>
+                    </div>
+                    <div class="quiz">
+                        <h2>La nourriture principale des Aztèque était :</h2>
+                        <p>
+                            <input type="radio" id="ques3prop1" name="ques3" value="prop1">
+                            <label for="ques3prop1">le riz</label><br>
+                            <input type="radio" id="ques3prop2" name="ques3" value="prop2">
+                            <label for="ques3prop2">le maïs</label><br>
+                            <input type="radio" id="ques3prop3" name="ques3" value="prop3">
+                            <label for="ques3prop3">le blé</label><br>
+                            <input type="radio" id="ques3prop4" name="ques3" value="prop4">
+                            <label for="ques3prop4">le pain</label><br>
+                            <input type="radio" id="ques3prop5" name="ques3" value="prop5">
+                            <label for="ques3prop5">la tomate</label><br>
+                        </p>
+                    </div>
+                    <div class="quiz">
+                        <h2>L'empire romain a été fondé en :</h2>
+                        <p>
+                            <input type="radio" id="ques4prop1" name="ques4" value="prop1">
+                            <label for="ques4prop1">300 avant JC</label><br>
+                            <input type="radio" id="ques4prop2" name="ques4" value="prop2">
+                            <label for="ques4prop2">300 après JC</label><br>
+                            <input type="radio" id="ques4prop3" name="ques4" value="prop3">
+                            <label for="ques4prop3">27 avant JC</label><br>
+                            <input type="radio" id="ques4prop4" name="ques4" value="prop4">
+                            <label for="ques4prop4">27 après JC</label><br>
+                            <input type="radio" id="ques4prop5" name="ques4" value="prop5">
+                            <label for="ques4prop5">52 avant JC</label><br>
+                            <input type="radio" id="ques4prop6" name="ques4" value="prop6">
+                            <label for="ques4prop6">52 après JC</label><br>
+                        </p>
+                    </div>
+                    <input type="button" id='submitbutton' value="Réponses" onclick="quiz()">
+                    <div id="points"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
