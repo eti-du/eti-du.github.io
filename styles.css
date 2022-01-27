@@ -248,6 +248,24 @@ p{
     text-align: center;
 }
 
+.quiz input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #dddddd;
+    border-radius: 6px;
+}
+
+.quiz input[type="radio"]:checked{
+    height: 17px;
+    width: 17px;
+    transition: 0.1s all linear;
+    border: 9px solid #40b38d;
+}
+
 @keyframes rotate{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
