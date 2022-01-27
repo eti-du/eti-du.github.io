@@ -50,7 +50,7 @@ p{
     background-size: cover;
     height:100%;
     width: 100%;
-    cursor: url('images/cursor.svg') 4 12, auto;
+    cursor: url('images/cursor.svg') 20 1, auto;
     /*animation: 1s linear 0s 1 alternate pbdep;*/
 }
 
