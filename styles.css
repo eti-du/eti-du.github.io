@@ -224,6 +224,7 @@ p{
     width: 120px;
     background-color: #99ff00;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 .quiz{
     border: solid #ffffff 2px;
